@@ -1,0 +1,11 @@
+
+
+
+
+.navbar{
+    height: 100px;
+    display: flex
+}
+.navbar-logo{
+    width: 300px;
+}
