@@ -17,3 +17,9 @@ header{
     display: flex;
     flex-direction: column;
 }
+
+.logo-he4rt{
+    width: 300px;
+    margin-left: 15%;
+    margin-top: 20px;
+}
