@@ -13,6 +13,12 @@ body{
 }
 
 /* = = = HEADER = = = */
+a{
+    color:rgb(109, 63, 168);
+    text-decoration: none;
+
+}
+
 header{
     display: flex;
     flex-direction: column;
@@ -26,8 +32,8 @@ header{
 
 .credits{
     position: absolute;
-    margin-top: 5%;
+    margin-top: 4.5%;
     margin-left: 80%;
     font-weight: 100%;
-    color: blanchedalmond;
+    color: whitesmoke;
 }
