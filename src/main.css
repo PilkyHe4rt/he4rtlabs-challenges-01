@@ -7,7 +7,7 @@
 }
 
 body{
-    background-color: rgb(192, 173, 218);
+    background-color: rgb(224, 201, 245);
     font-family: 'Noto Sans SC';
     color: black;
 }
@@ -36,4 +36,66 @@ header{
     margin-left: 80%;
     font-weight: 100%;
     color: whitesmoke;
+}
+
+/* = = = MAIN = = = */
+
+.intro{
+    width: 30vw;
+    max-width: 1300px;
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+}
+
+
+.svg-designer > img{
+    position: initial;
+    width: 600px;
+    margin-left: 20%;
+}
+
+
+
+.intro-text > h1{
+    position: absolute;
+    font-family: 'Roboto', sans-serif;
+    font-size: 45px;
+    color: rgb(109, 63, 168);
+    margin-left: 5%;
+    margin-top: 6%;
+    font-weight: 600;
+    text-align: center;
+}
+
+.intro-text > h4{
+    position: fixed;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 22px;
+    color: rgb(49, 49, 49);
+    margin-left: 1%;
+    margin-top: 15%;
+    font-weight: 200;
+    text-align: center;
+    
+}
+
+.button-calc{
+    position: absolute;
+    margin-left: 21%;
+    margin-top: 24%;
+    border: none;
+    background-color: rgb(165, 139, 201);
+    font-size: 16px;
+    padding: 10px 35px;
+}
+
+.button-sobre{
+    position: absolute;
+    margin-left: 34%;
+    margin-top: 24%;
+    border: none;
+    background-color: rgb(165, 139, 201);
+    font-size: 16px;
+    padding: 10px 35px;
 }
