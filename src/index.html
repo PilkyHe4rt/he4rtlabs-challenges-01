@@ -8,8 +8,8 @@
   </head>
   <body>
     <header>
-      <img class="logo-he4rt" src="assets/he4rt1.png">
-      <div class="credits">Desenvoldido por <a href=" https://github.com/PilkyHe4rt"> Pilky He4rt</a> </div>
+      <img class="logo-he4rt" src="assets/he4rt1.png" onclick="index()">
+      <div class="credits">Desenvoldido por <a href=" https://github.com/PilkyHe4rt" target="_blank"> Pilky He4rt</a> </div>
     </header>
     
     <!--- MAIN -->
@@ -23,7 +23,7 @@
         <h4> Uma calculadora que irá te mostrar o valor da sua hora perante o freelance cotado. O projeto
            tem a finalidade de descrever alguns fatores determinantes para você saber o valor da sua hora em
            um freelance.</h4>
-        <button class="button-calc01" onclick="calculadora()"> Calcular </button>
+        <button class="button-calc01" onclick="calculadora()"> Calculadora </button>
         <button class="button-sobre01" onclick="sobre()"> Saiba Mais </button>
       </div>
     </div>
@@ -50,11 +50,11 @@
               </div>
               <div class="text-tab">  
                 <div class="titulo-button">
-                <h1> Valor Total do Projeto</h1>
+                  <h1> Valor Total do Projeto</h1>
                 </div>
                 <br>
                 <div class="text-button">
-                <p>Para o começo do cálculo é necessário informar o quanto você
+                  <p>Para o começo do cálculo é necessário informar o quanto você
                   deseja receber em cima do projeto. A patrir desse valor, do quanto
                   você desejaria ganhar em cima do trabalho, é feito o cálculo maior.</p>
                 </div>
@@ -74,7 +74,7 @@
                 </div>
                 <br>
                 <div class="text-button">
-                <p>Para o começo do cálculo é necessário informar o quanto você
+                  <p>Para o começo do cálculo é necessário informar o quanto você
                   deseja receber em cima do projeto. A patrir desse valor, do quanto
                   você desejaria ganhar em cima do trabalho, é feito o cálculo maior.</p>
                 </div>
@@ -90,13 +90,13 @@
               </div>
               <div class="text-tab">
                 <div class="titulo-button">
-                <h1> Dias Efeitivos por Semana </h1>
+                  <h1> Dias Efeitivos por Semana </h1>
                 </div>
                 <br>
                 <div class="text-button">
-                <p> A quantidade de dias efetivos que você irá trabalhar no projeto é um dos fatores
-                  a se levar em conta. Não há garantia que você trabalhará todos os dias. Logo, você
-                  terá que cotar uma quantidade de dais escpecificos para lidar.</p>
+                  <p> A quantidade de dias efetivos que você irá trabalhar no projeto é um dos fatores
+                    a se levar em conta. Não há garantia que você trabalhará todos os dias. Logo, você
+                    terá que cotar uma quantidade de dais escpecificos para lidar.</p>
                 </div>
               </div>
             </div>
@@ -110,102 +110,65 @@
               </div>
               <div class="text-tab">
                 <div class="titulo-button">
-                <h1> Dias de Férias no Projeto </h1>
+                  <h1> Dias de Férias no Projeto </h1>
                 </div>
                 <br>
                 <div class="text-button">
-                <p> Como em qualquer modalidade de trabalho, há encargos referentes a verba de férias.
+                  <p> Como em qualquer modalidade de trabalho, há encargos referentes a verba de férias.
                   Uma parte do valor da sua hora reflete diretamente na quantidade de dias que você deseja
                   tirar "férias" com o valor do projeto.</p>
                 </div>
               </div>
             </div>
           </div>
-
-<!--
-
-<!- QUARTO BOTÃO DA TABELA->
-            <div class="conteudo-tab" id="botao04">
-              <div class="tab tab04">
-                <div class="svg-trip">
-                  <img src="assets/trip.svg" alt="Férias">
-                </div>
-                <div class="text-tab04">
-                  <h1> Dias de Férias no Projeto</h1>
-                  <p>Como qualuqer modalidad de trablho, seja CLT ou PJ, há seus encargos referentes a verba
-                de férias. Não seria diferente para lidar com um freela. Uma parte do valor da sua hora
-                reflete diretametne na quantidade de dias que você deseja tirar "férias" com o valor
-                do projeto</p>
-                </div>
-              </div>
-
-          </div>
         </div>
       </div>
+        
 
+<!-- CALCULADORA -->
+    <div class="text-calc">
+      <div class="inputs calc-calc">
+        <h1>Calculadora de Horas Para Freela</h1>
+        <label>Valor Total do Projeto</label>
+        <input type="number" id="valor-total" class="input-number">
+        <label>Quantidade de Horas por Dia</label>
+        <input type="number" id="horas-dia" class="input-number">
+        <label>Dias Efetivos por Semana</label>
+        <input type="number" id="dias-efetivos" class="input-number" >
+        <label>Dias de Férias no Projeto</label>
+        <input type="number" id="dias-ferias" class="input-number"> 
 
-
--->
-
-
-
-      
+        <button class="btn" type="submit" onclick="calcular()"> Calcular</button>
+        <h4 class="resultado">Valor por hora:
+          <br>
+          <span id="valorHora" onclick="calcular()"></span>
+        </h4>
+        
+      </div>
+          <button class="button-index02" onclick="index()"> Homepage</button>
+          <button class="button-sobre02" onclick="sobre()"> Saiba Mais </button>
+        </div>
+      </div>
     </div>
-    <button class="button-index02" onclick="index()"> Index</button>
-    <button class="button-sobre02" onclick="sobre()"> Saiba Mais </button>
+
 
     <!-- SOBRE-->
+
     <div id="sobre" class="sobre">
-      <h1> Je t'aime Luiza sz </h1>
-
+      <div class="logo-he4rt2">
+        <img src="assets/he4rt2.png" alt="He4rt" >
+      </div>
+      <div class="text-sobre">
+        <h1> O que é a He4rt?</h1>
+        <h4> He4rt Developers é um grupo de devs criado  com o intuito de guiar quem deseja iniciar na área
+          de programação. O foco do grupo é ajudar os novatos que não tem nenhuma orientação, a achar um caminho
+          para a área de programção/desenvolvimento. 
+          <a href="http://heartdevs.com/" target="_blank">clique aqui </a> para entrar no site da He4rt.</h4>
+        <button class="button-index03" onclick="calculadora()"> Calculadora </button>
+        <button class="button-calc03" onclick="index()"> Homepage </button>
+      </div>
     </div>
-     
-
-
-        <!---SESSÃO COM CALCULADORA--
-     
-            1. Valor Total do Projeto
-            2. Quantidade de Horas por Dia
-            3. Dias Efeteviso na Semana 
-            4. Dias de Férias no Projeto
-          
-
-           Valor Total do Projeto - Money
-                Para o começo do cálculo é necessário informar o quanto você
-                  deseja receber em cima do projeto. A patrir desse valor, do quanto
-                  você desejaria ganhar em cima do trabalho, é feito o cálculo maior
-
-          Quantidade de Horas por Dia - Hours
-                Iremos falar sobre o tempo diário que você vai investir
-                  no projeto. Quando tratamos de freelances, há uma certa demande do seu
-                  tempo em off, tempo o qual você estaria livre para fazer o que desejar. <br>
-                  Esse tempo é algo valioso para qualquer pessoa. Então claramente temos
-                  que levar esse fator em consideração</p>
-            
-
-           Dias Efetivos da Semana - Calendar
-                 A quantidade de dias efetivos que você irá disponibilizar para trabalhar
-                  no projeto também é um dos fatores a se levar a conta. Não há nenhuma 
-                  garantia que você poderá trabalhar todos os dias e de fato lidar com o processo
-                  de confirmar tudo com o cliente. Logo, você terá que cotar uma quantidade
-                  de dias escpecíficas para lidar com todo o processo, sendo ele a parte comercial
-                  e desenvolvimento
-                  
-              Dias Efetivos da Semana  - Trip
-                Como qualuqer modalidad de trablho, seja CLT ou PJ, há seus encargos referentes a verba
-                de férias. Não seria diferente para lidar com um freela. Uma parte do valor da sua hora
-                reflete diretametne na quantidade de dias que você deseja tirar "férias" com o valor
-                do projeto
-                
-              </div>
-            </div>   
-                    
-          </div>
-        </div>
-      </section>
-    -->
-    
-
+    </div>
     <script src="./main.js"></script>
   </body>
 </html>
