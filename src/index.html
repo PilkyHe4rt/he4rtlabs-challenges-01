@@ -8,8 +8,8 @@
   </head>
   <body>
     <header>
-      <img class="logo-he4rt" src="assets/he4rt1.png">
-      <div class="credits">Desenvoldido por <a href=" https://github.com/PilkyHe4rt"> Pilky He4rt</a> </div>
+      <img class="logo-he4rt" src="assets/he4rt1.png" onclick="index()">
+      <div class="credits">Desenvoldido por <a href=" https://github.com/PilkyHe4rt" target="_blank"> Pilky He4rt</a> </div>
     </header>
     
     <!--- MAIN -->
@@ -23,7 +23,7 @@
         <h4> Uma calculadora que irá te mostrar o valor da sua hora perante o freelance cotado. O projeto
            tem a finalidade de descrever alguns fatores determinantes para você saber o valor da sua hora em
            um freelance.</h4>
-        <button class="button-calc01" onclick="calculadora()"> Calcular </button>
+        <button class="button-calc01" onclick="calculadora()"> Calculadora </button>
         <button class="button-sobre01" onclick="sobre()"> Saiba Mais </button>
       </div>
     </div>
@@ -134,30 +134,40 @@
         <label>Quantidade de Horas por Dia</label>
         <input type="number" id="horas-dia" class="input-number">
         <label>Dias Efetivos por Semana</label>
-        <input type="number" id="dias-efetivos" class="input-number">
+        <input type="number" id="dias-efetivos" class="input-number" >
         <label>Dias de Férias no Projeto</label>
         <input type="number" id="dias-ferias" class="input-number"> 
 
-        <button class="btn" id="calcular"> Calcular</button>
-        <span id="resultado"></span>
+        <button class="btn" type="submit" onclick="calcular()"> Calcular</button>
+        <h4 class="resultado">Valor por hora:
+          <br>
+          <span id="valorHora" onclick="calcular()"></span>
+        </h4>
+        
       </div>
-    
-      
-
-
-
-      
-                
-
-
-          <button class="button-index02" onclick="index()"> Index</button>
+          <button class="button-index02" onclick="index()"> Homepage</button>
           <button class="button-sobre02" onclick="sobre()"> Saiba Mais </button>
         </div>
       </div>
     </div>
+
+
     <!-- SOBRE-->
+
     <div id="sobre" class="sobre">
-      <h1> Je t'aime Luiza sz </h1>
+      <div class="logo-he4rt2">
+        <img src="assets/he4rt2.png" alt="He4rt" >
+      </div>
+      <div class="text-sobre">
+        <h1> O que é a He4rt?</h1>
+        <h4> He4rt Developers é um grupo de devs criado  com o intuito de guiar quem deseja iniciar na área
+          de programação. O foco do grupo é ajudar os novatos que não tem nenhuma orientação, a achar um caminho
+          para a área de programção/desenvolvimento. 
+          <a href="http://heartdevs.com/" target="_blank">clique aqui </a> para entrar no site da He4rt.</h4>
+        <button class="button-index03" onclick="calculadora()"> Calculadora </button>
+        <button class="button-calc03" onclick="index()"> Homepage </button>
+      </div>
+    </div>
     </div>
     <script src="./main.js"></script>
   </body>

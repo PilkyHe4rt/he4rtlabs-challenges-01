@@ -282,6 +282,7 @@ input[type=number] {
 }
 
 .btn {
+    
     padding: 10px 15px;
     background: #a58bc9;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -292,6 +293,11 @@ input[type=number] {
     cursor: pointer;
     margin-top: 20px;
     margin-bottom: 30px;
+}
+
+.resultado{
+    text-align: center;
+    margin-top: 4%;
 }
 
 
@@ -320,8 +326,8 @@ input[type=number] {
 
 .button-index02{
     position: absolute;
-    margin-left: 25%;
-    margin-top: 10%;
+    margin-left: 69%;
+    margin-top: 3%;
     border: none;
     background-color: #a58bc9;
     font-size: 16px;
@@ -331,12 +337,12 @@ input[type=number] {
 
 .button-sobre02{
     position: absolute;
-    margin-left: 50%;
-    margin-top: 10%;
+    margin-left: 83%;
+    margin-top: 3%;
     border: none;
     background-color: #a58bc9;
     font-size: 16px;
-    padding: 10px 35px;
+    padding: 10px 20px;
     color: whitesmoke;
 }
 /* = = = = SOBRE = = = = */
@@ -345,26 +351,58 @@ input[type=number] {
     max-width: 1300px;
     display: none;
     justify-content: center;
-    margin-top: 5%
+    margin-top: 5%;
+}
+.logo-he4rt2 > img{
+    position: initial;
+    width: 650px;
+    margin-left: 20%;
+    margin-top: -8%;
+}
+
+.text-sobre > h1{
+    position: absolute;
+    font-family: 'Roboto', sans-serif;
+    font-size: 45px;
+    color: rgb(109, 63, 168);
+    margin-left: 18%;
+    margin-top: 5%;
+    font-weight: 600;
+    text-align: center;
+}
+.text-sobre > h4{
+    position: absolute;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    color: rgb(49, 49, 49);
+    margin-left: 1%;
+    margin-top: 12%;
+    font-weight: 200;
+    text-align: center;
 }
 .button-index03{
     position: absolute;
-    margin-left: 25%;
-    margin-top: 10%;
+    margin-left: 21%;
+    margin-top: 24%;
     border: none;
     background-color: rgb(165, 139, 201);
     font-size: 16px;
     padding: 10px 35px;
-    color: whitesmoke;
+    color: whitesmoke
 }
-
-.button-sobre03{
+.button-calc03{
     position: absolute;
-    margin-left: 50%;
-    margin-top: 10%;
+    margin-left: 34%;
+    margin-top: 24%;
     border: none;
     background-color: #a58bc9;
     font-size: 16px;
     padding: 10px 35px;
-    color: whitesmoke;
+    color: whitesmoke
+
+a{
+    color:rgb(109, 63, 168);
+    text-decoration: none;
+    font-weight: 600;
+
 }
