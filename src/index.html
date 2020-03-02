@@ -8,10 +8,167 @@
   </head>
   <body>
     <header>
-      <img class="logo-he4rt" src="assets/he4rt1.png">
-      <div class="credits">Desenvoldido por <a href=" https://github.com/PilkyHe4rt"> Pilky He4rt</a> </div>
-
+      <img class="logo-he4rt" src="assets/he4rt1.png" onclick="index()">
+      <div class="credits">Desenvoldido por <a href=" https://github.com/PilkyHe4rt" target="_blank"> Pilky He4rt</a> </div>
     </header>
+    
+    <!--- MAIN -->
+    <div id="index" class="intro">
+      <div class="svg-designer">
+        <img src="assets/designer.svg" alt="Calculadora">
+      </div>
+      
+      <div class="intro-text">
+        <h1> Calculadora de Horas de Freelancer</h1>
+        <h4> Uma calculadora que irá te mostrar o valor da sua hora perante o freelance cotado. O projeto
+           tem a finalidade de descrever alguns fatores determinantes para você saber o valor da sua hora em
+           um freelance.</h4>
+        <button class="button-calc01" onclick="calculadora()"> Calculadora </button>
+        <button class="button-sobre01" onclick="sobre()"> Saiba Mais </button>
+      </div>
+    </div>
+
+
+    <!--- VARIAVEIS-->
+    <div id="calculadora" class="calc">
+      <div class="calc-text">
+        <div class="variavel-text">
+        <h1> As Quatros Variáveis da Operação </h1>
+        </div>
+        <div class="tabs">
+          <div class="tabs-button">
+            <button id="color-tab01" class= "tab01 active-tab1" onclick="botao01()">1. Valor Total do Projeto</button>
+            <button id="color-tab02" class= "tab02 " onclick="botao02()">2. Quantidade de Horas por Dia</button>
+            <button id="color-tab03" class= "tab03 " onclick="botao03()">3. Dias Efetivos na semana</button>
+            <button id="color-tab04" class= "tab04 " onclick="botao04()">4. Dias de Férias no Projeto</button>
+          </div>
+<!-- PRIMEIRO BOTÃO DA TABELA-->
+          <div class="conteudo-tab01" id="botao01">
+            <div class="tab tab01 active-tab">
+              <div class="svg-money">
+                <img src="assets/money.svg" alt="Dinheiro">
+              </div>
+              <div class="text-tab">  
+                <div class="titulo-button">
+                  <h1> Valor Total do Projeto</h1>
+                </div>
+                <br>
+                <div class="text-button">
+                  <p>Para o começo do cálculo é necessário informar o quanto você
+                  deseja receber em cima do projeto. A patrir desse valor, do quanto
+                  você desejaria ganhar em cima do trabalho, é feito o cálculo maior.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+<!-- SEGUNDO BOTÃO DA TABELA-->
+          <div class="conteudo-tab02" id="botao02">
+            <div class="tab tab02 active-tab">
+              <div class="svg-hours">
+                <img src="assets/hours.svg" alt="Horas">
+              </div>
+              <div class="text-tab">
+                <div class="titulo-button">
+                <h1> Quantidade de Horas por Dia </h1>
+                </div>
+                <br>
+                <div class="text-button">
+                  <p>Para o começo do cálculo é necessário informar o quanto você
+                  deseja receber em cima do projeto. A patrir desse valor, do quanto
+                  você desejaria ganhar em cima do trabalho, é feito o cálculo maior.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+<!--- TERCEITO BOTÃO DA TABELA -->
+          <div class="conteudo-tab03" id="botao03">
+            <div class="tab tab02 active-tab">
+              <div class="svg-calendar">
+                <img src="assets/calendar.svg" alt="Calendário">
+              </div>
+              <div class="text-tab">
+                <div class="titulo-button">
+                  <h1> Dias Efeitivos por Semana </h1>
+                </div>
+                <br>
+                <div class="text-button">
+                  <p> A quantidade de dias efetivos que você irá trabalhar no projeto é um dos fatores
+                    a se levar em conta. Não há garantia que você trabalhará todos os dias. Logo, você
+                    terá que cotar uma quantidade de dais escpecificos para lidar.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+<!--- QUARTO BOTÃO DA TABELA -->
+          <div class="conteudo-tab04" id="botao04">
+            <div class="tab tab04 active-tab">
+              <div class="svg-trip">
+                <img src="assets/trip.svg" alt="Férias">
+              </div>
+              <div class="text-tab">
+                <div class="titulo-button">
+                  <h1> Dias de Férias no Projeto </h1>
+                </div>
+                <br>
+                <div class="text-button">
+                  <p> Como em qualquer modalidade de trabalho, há encargos referentes a verba de férias.
+                  Uma parte do valor da sua hora reflete diretamente na quantidade de dias que você deseja
+                  tirar "férias" com o valor do projeto.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+        
+
+<!-- CALCULADORA -->
+    <div class="text-calc">
+      <div class="inputs calc-calc">
+        <h1>Calculadora de Horas Para Freela</h1>
+        <label>Valor Total do Projeto</label>
+        <input type="number" id="valor-total" class="input-number">
+        <label>Quantidade de Horas por Dia</label>
+        <input type="number" id="horas-dia" class="input-number">
+        <label>Dias Efetivos por Semana</label>
+        <input type="number" id="dias-efetivos" class="input-number" >
+        <label>Dias de Férias no Projeto</label>
+        <input type="number" id="dias-ferias" class="input-number"> 
+
+        <button class="btn" type="submit" onclick="calcular()"> Calcular</button>
+        <h4 class="resultado">Valor por hora:
+          <br>
+          <span id="valorHora" onclick="calcular()"></span>
+        </h4>
+        
+      </div>
+          <button class="button-index02" onclick="index()"> Homepage</button>
+          <button class="button-sobre02" onclick="sobre()"> Saiba Mais </button>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- SOBRE-->
+
+    <div id="sobre" class="sobre">
+      <div class="logo-he4rt2">
+        <img src="assets/he4rt2.png" alt="He4rt" >
+      </div>
+      <div class="text-sobre">
+        <h1> O que é a He4rt?</h1>
+        <h4> He4rt Developers é um grupo de devs criado  com o intuito de guiar quem deseja iniciar na área
+          de programação. O foco do grupo é ajudar os novatos que não tem nenhuma orientação, a achar um caminho
+          para a área de programção/desenvolvimento. 
+          <a href="http://heartdevs.com/" target="_blank">clique aqui </a> para entrar no site da He4rt.</h4>
+        <button class="button-index03" onclick="calculadora()"> Calculadora </button>
+        <button class="button-calc03" onclick="index()"> Homepage </button>
+      </div>
+    </div>
+    </div>
     <script src="./main.js"></script>
   </body>
 </html>
